@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/node_modules/@picocss/pico/css/pico.min.css">
+  <link rel="stylesheet" href="custom.css">
+ 
+  <title>Document</title>
+</head>
+<body>
+
+  <nav class="container-fluid">
+    <ul>
+      <li><a href="./" class="contrast" onclick="event.preventDefault()"><strong>Alumni Network</strong></a></li>
+    </ul>
+    <ul>
+      <li>
+        <details role="list" dir="rtl">
+          <summary aria-haspopup="listbox" role="link" class="secondary">Theme</summary>
+          <ul role="listbox">
+            <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+            <li><a href="#" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details role="list" dir="rtl">
+          <summary aria-haspopup="listbox" role="link" class="secondary">Examples</summary>
+          <ul role="listbox">
+            <li><a href="../preview/">Preview</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+ 
+  <main class="container">
+    <div class="grid">
+      <div class="info">
+          <hgroup>
+            <h1 class="title">Welcome to Alumni Network</h1>
+            <h5 class="subhead">Connect with your fellows, share your achievements, find-out job opportunities, explore projects at & Donate for social cause.!</h5>
+            <h6 class="note">Don't you have an account? Register Now! it's really simple and become part of Alumni Network!</h6>
+          </hgroup>
+          <a href="#" role="button" class="contrast outline">Register Now!</a>
+      </div>
+      <article class="grid">
+        <div>
+          <hgroup>
+            <h1>Sign in</h1>
+            <h2>A minimalist layout for Login pages</h2>
+          </hgroup>
+          <form>
+            <input type="text" name="login" placeholder="Login" aria-label="Login" autocomplete="nickname" required>
+            <input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required>
+            <fieldset>
+              <label for="remember">
+                <input type="checkbox" role="switch" id="remember" name="remember">
+                Remember me
+              </label>
+            </fieldset>
+            <button type="submit" class="contrast" onclick="event.preventDefault()">Login</button>
+          </form>
+        </div>
+      </article>
+   
+    </div>
+   
+  </main>
+
+  <footer class="container-fluid">
+    <small>Built with <a href="https://picocss.com" class="secondary">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/sign-in/" class="secondary">Source code</a></small>
+  </footer>
+  <!-- ./ Footer -->
+
+</body>
+</html>
