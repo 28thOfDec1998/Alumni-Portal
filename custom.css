@@ -9,3 +9,9 @@
 .subhead{
   margin-bottom: 2rem;
 }
+
+ nav li a svg {
+  width: var(--font-size);
+  height: var(--font-size);
+  color: var(--contrast);
+}
