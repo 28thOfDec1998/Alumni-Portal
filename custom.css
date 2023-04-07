@@ -15,3 +15,7 @@
   height: var(--font-size);
   color: var(--contrast);
 }
+
+nav{
+  margin-top: 1rem;
+}
