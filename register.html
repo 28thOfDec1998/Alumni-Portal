@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/node_modules/@picocss/pico/css/pico.min.css">
+  <link rel="stylesheet" href="custom.css">
+ 
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <nav class="container-fluid">
+    <ul>
+      <li><a href="./" class="contrast" onclick="event.preventDefault()"><strong>Alumni Network</strong></a></li>
+    </ul>
+
+    <ul>
+      <li ><a href="#" id="theme_switcher"></a></li>
+      <li ><a class="secondary">Link</a></li>
+      <li ><a class="secondary">Link</a></li>
+     
+    </ul>
+   
+  </nav>
+ 
+  <main class="container">
+    <div>
+
+        <h2>Register to IUB Alumni Network</h2>
+           
+
+      <article class="grid">
+        <div>
+          <hgroup >
+            <h1>Sign up</h1>
+            <h4>A minimalist layout for Login pages.</h4>
+          </hgroup>
+          <form>
+            <div class="grid">   
+                <label for="firstname">
+                    First name
+                    <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+                  </label>
+
+                  <label for="lastname">
+                    Last name
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+                  </label>
+            </div>
+
+            <div class="grid">   
+                <label for="firstname">
+                    CNIC Number
+                    <input type="text" id="lastname"  placeholder="CNIC Number" required>
+                  </label>
+
+                  <label for="date">
+                    Date of Birth
+                    <input type="date" id="date"  required>
+                  </label>
+            </div>
+
+            <div>
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Email address" required>
+                <small>We'll never share your email with anyone else.</small>
+            </div>
+           
+
+            <div class="grid">
+                    <label for="password">
+                         Password
+                         <input id="pass" type="password" name="pass" placeholder="Enter Password" required>
+                    </label>
+        
+                    <label for="confirmpasswaord">
+                         Confirm Password
+                        <input id="confirm_pass" type="password"name="confirm_pass" placeholder="Confirm Password" required onkeyup="validate_password()">
+                    </label>
+            </div>
+
+            <div class="pass_alert">
+                <span id="wrong_pass_alert"></span>
+            </div>
+
+            <div class="grid">   
+                <label for="firstname">
+                    Phone Number
+                    <input type="text" placeholder="Phone Number" required>
+                  </label>
+
+                  <label for="date">
+                    Your Gender
+                    <select id="fruit" required>
+                        <option value="" selected>Select Gender…</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                  </label>
+            </div>
+
+            <div>
+                <label for="postal">Postal Address</label>
+                <input type="email" id="email" name="email" placeholder="Postal Address" required>
+              
+            </div>
+   
+            <button role="button" class="contrast" onclick="wrong_pass_alert()">Login</button>
+          </form>
+          <h6><a class="secondary" href="/index.html">Already Register</a></h6>
+        </div>
+      </article>
+    </div>
+   
+  </main>
+
+  <footer class="container-fluid">
+    <small>Built with <a href="https://picocss.com" class="secondary">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/sign-in/" class="secondary">Source code</a></small>
+  </footer>
+  <!-- ./ Footer -->
+
+  <script src="/custom js/password.js"></script>
+  <script src="/custom js/theme.js"></script>
+
+  
+
+</body>
+</html>
