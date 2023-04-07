@@ -8,7 +8,7 @@ const moon = '<svg viewBox="0 0 16 16"><g fill="currentColor"><path d="M6 .278a.
 
 document.addEventListener('DOMContentLoaded', () => {
   switchTheme.innerHTML = os_default
-  html.setAttribute('data-theme', 'auto')
+//   html.setAttribute('data-theme', 'auto')
   switchTheme.setAttribute( 'os theme')
   switchTheme.focus()
   removeTooltip(3000)

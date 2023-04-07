@@ -30,15 +30,12 @@
   <main class="container">
     <div>
 
-        <h2>Register to IUB Alumni Network</h2>
+        <h2>Register to Alumni Network</h2>
            
 
       <article class="grid">
         <div>
-          <hgroup >
             <h1>Sign up</h1>
-            <h4>A minimalist layout for Login pages.</h4>
-          </hgroup>
           <form>
             <div class="grid">   
                 <label for="firstname">
@@ -74,7 +71,7 @@
             <div class="grid">
                     <label for="password">
                          Password
-                         <input id="pass" type="password" name="pass" placeholder="Enter Password" required>
+                         <input id="pass" type="password" name="pass" placeholder="Password" required>
                     </label>
         
                     <label for="confirmpasswaord">
@@ -88,15 +85,15 @@
             </div>
 
             <div class="grid">   
-                <label for="firstname">
+                <label for="phone_number">
                     Phone Number
                     <input type="text" placeholder="Phone Number" required>
                   </label>
 
-                  <label for="date">
+                  <label for="gender">
                     Your Gender
-                    <select id="fruit" required>
-                        <option value="" selected>Select Gender…</option>
+                    <select required>
+                        <option selected>Select Gender…</option>
                         <option>Male</option>
                         <option>Female</option>
                       </select>
@@ -105,9 +102,76 @@
 
             <div>
                 <label for="postal">Postal Address</label>
-                <input type="email" id="email" name="email" placeholder="Postal Address" required>
-              
+                <input name="postal" placeholder="Postal Address" required>
+                <label for="city">
+                    Your City
+                    <select required>
+                        <option  selected>Select City…</option>
+                        <option>Faisalabad</option>
+                        <option>Lahore</option>
+                      </select>
+                  </label>
             </div>
+
+            <div class="grid">
+                <label for="degree">
+                    Degree Level
+                    <select  required>
+                        <option selected>Select Degree…</option>
+                        <option>PhD</option>
+                        <option>Ms</option>
+                        <option>Bs</option>
+                      </select>
+                </label>
+                <label for="program">
+                    Program/Subject
+                    <select  required>
+                        <option selected>Select Program/Subject…</option>
+                        <option>Arts</option>
+                        <option>BSCS</option>
+                        <option>BSIT</option>
+                      </select>
+                </label>
+            </div>
+
+            <div class="grid">   
+                <label for="register_number">
+                    Registation Number
+                    <input type="text" placeholder="Registation Number" required>
+                  </label>
+
+                  <label for="completion">
+                    Completion Year
+                    <select required>
+                        <option selected>Select Completion Year…</option>
+                        <option>2010</option>
+                        <option>2020</option>
+                      </select>
+                  </label>
+            </div>
+
+            <div>
+                <fieldset>
+                    <label for="employment">
+                        Employment Status
+                        <select required>
+                            <option selected>Select Employment Status…</option>
+                            <option>Unemployed</option>
+                            <option>Employed</option>
+                          </select>
+                    </label>
+                    
+                    <label for="terms">
+                      <input type="checkbox" id="terms" name="terms">
+                      I agree to the Terms and Conditions
+                    </label>
+                   
+                </fieldset>
+            </div>
+
+            
+
+           
    
             <button role="button" class="contrast" onclick="wrong_pass_alert()">Login</button>
           </form>
